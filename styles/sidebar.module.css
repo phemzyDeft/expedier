@@ -1,0 +1,18 @@
+.list{
+  list-style: none;
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 500;
+  color: blue;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.list:hover{
+  background: rgba(54, 54, 232, 0.2);
+  padding: 1rem .5rem;
+  border-radius: 20px 0 0 20px;
+  border-right: 5px solid rgba(32, 32, 202, 0.442);
+  cursor: pointer;
+}

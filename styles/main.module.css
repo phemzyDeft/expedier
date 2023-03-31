@@ -1,0 +1,49 @@
+.title{
+  line-height: .3;
+}
+
+.sub_title{
+  font-size: .8rem;
+}
+
+.card{
+  background: blue;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fundwallet{
+  color: white;
+}
+
+.card_box_title{
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.card_box_balance{
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.card_box_user_name{
+  font-size: 1rem;
+}
+
+.mycard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.validcard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardnumber{
+  font-size: .7rem;
+}

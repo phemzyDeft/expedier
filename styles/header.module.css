@@ -1,0 +1,9 @@
+.search_bar{
+  border: none;
+  outline: none;
+}
+
+.search_bar:focus{
+  border: none;
+  outline: none;
+}
