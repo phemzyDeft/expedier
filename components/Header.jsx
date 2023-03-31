@@ -12,7 +12,7 @@ const Header = () => {
             <Image src="/images/expedier_logo.svg" width={150} height={100}/>
           </div>
           <div className="middle">
-            <div className="container-search d-flex border px-5 py-2 rounded-pill">
+            <div className="container-search w-100 d-flex border px-5 py-2 rounded-pill">
               <div className="search_btn me-5">
                 <Image src={"/sidebaricons/icon.png"} width={10} height={10}/>
               </div>
@@ -20,11 +20,9 @@ const Header = () => {
             </div>
           </div>
           <div className="end">
-            <div className="notification_container d-flex align-items-center">
-              <Image src={"/sidebaricons/inactive.png"} width={30} height={30}/>
-              <div className='rounded-cricle bg-primary w-25 h-25 .text-center rounded-circle justify-content-center align-items-center d-flex'>
-                <p>CV</p>
-              </div>
+            <div className="notification_container d-flex align-items-center text-center">
+              <Image src={"/sidebaricons/inactive.png"} width={30} height={30} className={`mx-2`}/>
+              <div className={`${style.notification} mx-2`}>CV</div>
               <p>canada vendor</p>
             </div>
           </div>

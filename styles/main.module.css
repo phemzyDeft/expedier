@@ -7,7 +7,7 @@
 }
 
 .card{
-  background: blue;
+  background: #008CE5;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -38,12 +38,88 @@
   justify-content: space-between;
 }
 
+.mycard_img{
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .validcard{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.card_container{
+  background: #FFFFFF;
+  color: black;
+  box-shadow: 0px 2px 31px rgba(39, 52, 125, 0.05);
+  border-radius: 8px;
+  margin: 0 .6rem;
+  padding: 1rem 2rem .3rem;
+}
+
+.currency{
+  display: flex;
+  margin: auto;
+}
+
+.balance{
+  font-family: 'Rubik', sans-serif;
+}
+
+
 .cardnumber{
   font-size: .7rem;
+}
+
+.filter_btn{
+  background: rgba(22, 22, 211, 0.501);
+}
+
+/* credit card css */
+.creditcard_container{
+  color: white;
+  padding: 1rem 2rem;
+  background: linear-gradient(68.44deg, #0968E5 0%, #0941AB 49.27%, #091970 100%);
+  border-radius: 12px;
+}
+
+.creditcard_logo{
+  background: white;
+  border-radius: 20px;
+}
+
+/* send and receive money */
+.sendmoney_container{
+  background: #FFFFFF;
+  box-shadow: 0px 2px 31px rgba(39, 52, 125, 0.0994395);
+  backdrop-filter: blur(6.92949px);
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.receivemoney_container{
+  text-align: center;
+  padding: 1rem 1rem;
+  background: #007BFF;
+  border-radius: 5px;
+  color: white;
+}
+
+.avatar1{
+  background: linear-gradient(184.23deg, #007BFF -15.96%, #3BB2F9 99.08%);
+  border-radius: 50%;
+  padding: .7rem;
+  text-align: center;
+  margin: 0 .2rem;
+}
+
+/* invite link */
+.invite{
+  background: #BFDEFF;
+  border-radius: 20px;
 }

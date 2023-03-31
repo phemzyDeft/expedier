@@ -12,7 +12,7 @@
 .list:hover{
   background: rgba(54, 54, 232, 0.2);
   padding: 1rem .5rem;
-  border-radius: 20px 0 0 20px;
+  border-radius: 10px 0 0 10px;
   border-right: 5px solid rgba(32, 32, 202, 0.442);
   cursor: pointer;
 }

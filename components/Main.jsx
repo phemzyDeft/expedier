@@ -1,10 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 import style from '../styles/main.module.css'
+import Link from 'next/link'
+import Table from './Table'
 
 const Main = () => {
   return (
-    <div className='main'>
+    <div className='main py-4' style={{background: "#EDF3FF"}}>
       <div className="container">
         <div className="row">
           <div className="col-lg-8">
@@ -29,7 +31,7 @@ const Main = () => {
                   <p className={`${style.card_box_user_name}`}>John Doe (John4483)</p>
                 </div>
                 <div className={`${style.mycard}`}>
-                  <Image src={"/sidebaricons/expedier_card_logo.png"} height={80} width={60}/>
+                  <Image src={"/sidebaricons/expedier_card_logo.png"} className={style.mycard_img} height={55} width={50}/>
                   <div className={`${style.validcard}`}>
                     <p className={`${style.cardnumber}`}>VALID <br /> CARD</p>
                     <p className={`${style.cardnumber}`}>06 / 23</p>
@@ -37,32 +39,97 @@ const Main = () => {
                 </div>
               </div>
               <div className='cards d-flex align-items-center justify-content-between py-3'>
-                <div className="card">
-                  <div className="currency"></div>
-                  <div className="balance">
-                    <p>4,509,063</p>
+                <div className="container-fluid">
+                  <div className="row">
+                    <Link href={"/account"} className={`${style.card_container} col`}>
+                      <div className={`${style.currency}`}>
+                        <Image src={"/sidebaricons/country1.png"} width={30} height={20}/>
+                        <p className='px-2'>Balance</p>
+                      </div>
+                      <div className="balance">
+                        <h4 className={`${style.balance}`}>4,509,063</h4>
+                      </div>
+                      <p className={`${style.cardnumber}`}>Nigerian Naira</p>
+                    </Link>
+                    <Link href={"/account"} className={`${style.card_container} col`}>
+                      <div className={`${style.currency}`}>
+                        <Image src={"/sidebaricons/country2.png"} width={30} height={20}/>
+                        <p className='px-2'>Balance</p>
+                      </div>
+                      <div className="balance">
+                        <h4 className={`${style.balance}`}>4,509,063</h4>
+                      </div>
+                      <p className={`${style.cardnumber}`}>Nigerian Naira</p>
+                    </Link>
+                    <Link href={"/account"} className={`${style.card_container} col`}>
+                      <div className={`${style.currency}`}>
+                        <Image src={"/sidebaricons/country1.png"} width={30} height={20}/>
+                        <p className='px-2'>Balance</p>
+                      </div>
+                      <div className="balance">
+                        <h4 className={`${style.balance}`}>4,509,063</h4>
+                      </div>
+                      <p className={`${style.cardnumber}`}>Nigerian Naira</p>
+                    </Link>
                   </div>
-                  <p>Canadian Dollar</p>
                 </div>
-                <div className="card">
-                  <div className="currency"></div>
-                  <div className="balance">
-                    <p>4,509,063</p>
-                  </div>
-                  <p>Canadian Dollar</p>
-                </div>
-                <div className="card">
-                  <div className="currency"></div>
-                  <div className="balance">
-                    <p>4,509,063</p>
-                  </div>
-                  <p>Canadian Dollar</p>
-                </div>
-                
               </div>
-              <div className="filter_btn">
-                <button className='btn btn-primary'>Monthly</button>
+              <div className={`d-flex align-items-end justify-content-end`}>
+                <select name="" id="" className={`${style.filter_btn} px-5 py-2`}>
+                  <option value="Monthly" >Monthly</option>
+                </select>
               </div>
+              <Table />
+            </div>
+          </div>
+          <div className='col-lg-4'>
+            <p>Business Card</p>
+            <div className={`${style.creditcard_container}`}>
+              <div className='d-flex justify-content-between align-items-center my-auto'>
+                <p>credit card</p>
+                <Image className={`${style.creditcard_logo}`} src={"/images/expedier_logo.svg"} width={100} height={20}/>
+              </div>
+              <p>1234 5678 9101 1121</p>
+              <div className='d-flex align-items-center justify-content-between'>
+                <p>John Doe</p>
+                <p>06/21</p>
+              </div>
+            </div>
+            <div className='s%r d-flex justify-content-evenly pt-3'>
+              <div className={`${style.sendmoney_container}`}>
+                <Image src={"/sidebaricons/money-send.png"} width={30} height={30}/>
+                <p>Send Money</p>
+              </div>
+              <div className={`${style.receivemoney_container}`}>
+                <Image src={"/sidebaricons/money-recive.png"} width={30} height={30}/>
+                <p>Send Money</p>
+              </div>
+            </div>
+            <div className='d-flex justify-content-between py-3'>
+              <p>Employees</p>
+              <p>SEE ALL</p>
+            </div>
+            <div>
+              <div className="container d-flex justify-content-between">
+                <div className={style.avatar1}>
+                  <Image src={"/sidebaricons/Path.png"} width={30} height={30} />
+                </div>
+                <div className={style.avatar1}>
+                  <Image src={"/sidebaricons/Path.png"} width={30} height={30} />
+                </div>
+                <div className={style.avatar1}>
+                  <Image src={"/sidebaricons/Path.png"} width={30} height={30} />
+                </div>  
+                <div className={style.avatar1}>
+                  <Image src={"/sidebaricons/Path.png"} width={30} height={30} />
+                </div>
+                <div className={style.avatar1}>
+                  <Image src={"/sidebaricons/Path.png"} width={30} height={30} />
+                </div>             
+              </div>
+            </div>
+            <div className={style.invite}>
+
             </div>
           </div>
         </div>

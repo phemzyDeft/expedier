@@ -11,7 +11,7 @@ const Sidebar = () => {
           <ul>
             <li className={`${styles.list} m-auto`}>
               <Image src={"/sidebaricons/Vector.png"} height={17} width={20} className={`me-3`}/>
-              Home              
+              Home
             </li>
             <li className={`${styles.list} m-auto`}>
               <Image src={"/sidebaricons/Vector.png"} height={17} width={20} className={`me-3`}/>
@@ -29,6 +29,15 @@ const Sidebar = () => {
               <Image src={"/sidebaricons/Vector.png"} height={17} width={20} className={`me-3`}/>
               Invoice              
             </li>
+            <li className={`${styles.list} m-auto`}>
+              <Image src={"/sidebaricons/Vector.png"} height={17} width={20} className={`me-3`}/>
+              Invoice              
+            </li>
+            <li className={`${styles.list} m-auto`}>
+              <Image src={"/sidebaricons/Vector.png"} height={17} width={20} className={`me-3`}/>
+              Invoice              
+            </li>
+            
           </ul>
         </div>
       </div>
