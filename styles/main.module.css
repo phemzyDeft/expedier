@@ -97,7 +97,7 @@
 /* credit card css */
 .creditcard_container{
   color: white;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem .2rem;
   background: linear-gradient(68.44deg, #0968E5 0%, #0941AB 49.27%, #091970 100%);
   border-radius: 12px;
 }
@@ -126,13 +126,11 @@
 }
 
 .avatar1{
+  width: 60px;
+  height: 60px;
   background: linear-gradient(184.23deg, #007BFF -15.96%, #3BB2F9 99.08%);
-  border-radius: 50%;
-  padding: .7rem;
-  text-align: center;
-  margin: 0 .2rem;
+  border-radius: 42px;
 }
-
 /* invite link */
 .invite{
   background: #BFDEFF;

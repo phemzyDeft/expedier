@@ -87,8 +87,8 @@ const Main = () => {
           <div className='col-lg-4 col-md-12 col-12'>
             <p>Business Card</p>
             <div className={`${style.creditcard_container}`}>
-              <div className='d-flex justify-content-between align-items-center my-auto'>
-                <p>credit card</p>
+              <div className='d-flex justify-content-between align-items-center my-auto pb-3'>
+                <div>credit card</div>
                 <Image className={`${style.creditcard_logo}`} src={"/images/expedier_logo.svg"} width={100} height={20}/>
               </div>
               <p>1234 5678 9101 1121</p>
@@ -112,21 +112,21 @@ const Main = () => {
               <p>SEE ALL</p>
             </div>
             <div>
-              <div className="container d-flex justify-content-between">
-                <div className={style.avatar1}>
+              <div className="container d-flex justify-content-between pb-4">
+                <div className={`${style.avatar1} d-flex align-items-center justify-content-center px-3`}>
                   <Image src={"/sidebaricons/Path.png"} width={30} height={30}  alt='img'/>
                 </div>
-                <div className={style.avatar1}>
-                  <Image src={"/sidebaricons/Path.png"} width={30} height={30}  alt='img'/>
+                <div className={`${style.avatar2} mx-1`}>
+                  <Image src={"/sidebaricons/avatar1.png"} width={60} height={60}  alt='img'/>
                 </div>
-                <div className={style.avatar1}>
-                  <Image src={"/sidebaricons/Path.png"} width={30} height={30}  alt='img'/>
+                <div className={`${style.avatar2} mx-1`}>
+                  <Image src={"/sidebaricons/avatar2.png"} width={60} height={60}  alt='img'/>
                 </div>  
-                <div className={style.avatar1}>
-                  <Image src={"/sidebaricons/Path.png"} width={30} height={30}  alt='img'/>
+                <div className={`${style.avatar2} mx-1`}>
+                  <Image src={"/sidebaricons/avatar3.png"} width={60} height={60}  alt='img'/>
                 </div>
-                <div className={style.avatar1}>
-                  <Image src={"/sidebaricons/Path.png"} width={30} height={30}  alt='img'/>
+                <div className={`${style.avatar2}`}>
+                  <Image src={"/sidebaricons/avatar4.png"} width={60} height={60}  alt='img'/>
                 </div>             
               </div>
             </div>
