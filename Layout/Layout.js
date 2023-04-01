@@ -10,11 +10,13 @@ const Layout = ({ children }) => {
         <Header />
       </div>
       <div className="container-fluid px-0" style={{ overflowX: "hidden" }}>
-        <div className="row" style={{ marginTop: "128px" }}>
-          <div className={`${style.conntainer} col-lg-2 position-fixed`}>
-            <Sidebar />
+        <div className="row">
+          <div style={{ marginTop: "128px"}}>
+            <div className={`${style.container} col-lg-2 position-fixed`}>
+              <Sidebar />
+            </div>
+            <div className="col-lg-12 .offset-lg-2">{children}</div>
           </div>
-          <div className="col-lg-12 .offset-lg-2">{children}</div>
         </div>
       </div>
     </>

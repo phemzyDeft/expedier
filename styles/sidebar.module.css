@@ -1,10 +1,6 @@
 .container{
-  position: fixed;
-  height: calc(100vh);
-  top: 20vh;
-  width: 250px;
-  background-color: #FFFFFF;
-  border-right: 1px solid #ccc;
+  background-color: white;
+  height: 100vh;
 }
 
 .head{

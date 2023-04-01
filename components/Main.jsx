@@ -6,7 +6,7 @@ import Table from './Table'
 
 const Main = () => {
   return (
-    <div className='main py-4' style={{background: "#EDF3FF", marginLeft: '250px'}}>
+    <div className='main py-4' style={{background: "#EDF3FF", marginLeft: '225px'}}>
       <div className="container">
         <div className="row">
           <div className="col-lg-8 col-12">
