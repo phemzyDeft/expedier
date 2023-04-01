@@ -99,11 +99,11 @@ const Main = () => {
             </div>`
             <div className='s%r d-flex justify-content-evenly pt-3'>
               <div className={`${style.sendmoney_container}`}>
-                <Image src={"/sidebaricons/money-send.png"} width={30} height={30}/>
+                <Image src={"/sidebaricons/money-send.png"} width={30} height={30} alt='img'/>
                 <p>Send Money</p>
               </div>
               <div className={`${style.receivemoney_container}`}>
-                <Image src={"/sidebaricons/money-recive.png"} width={30} height={30}/>
+                <Image src={"/sidebaricons/money-recive.png"} width={30} height={30} alt='img'/>
                 <p>Send Money</p>
               </div>
             </div>
@@ -114,26 +114,26 @@ const Main = () => {
             <div>
               <div className="container d-flex justify-content-between">
                 <div className={style.avatar1}>
-                  <Image src={"/sidebaricons/Path.png"} width={30} height={30} />
+                  <Image src={"/sidebaricons/Path.png"} width={30} height={30}  alt='img'/>
                 </div>
                 <div className={style.avatar1}>
-                  <Image src={"/sidebaricons/Path.png"} width={30} height={30} />
+                  <Image src={"/sidebaricons/Path.png"} width={30} height={30}  alt='img'/>
                 </div>
                 <div className={style.avatar1}>
-                  <Image src={"/sidebaricons/Path.png"} width={30} height={30} />
+                  <Image src={"/sidebaricons/Path.png"} width={30} height={30}  alt='img'/>
                 </div>  
                 <div className={style.avatar1}>
-                  <Image src={"/sidebaricons/Path.png"} width={30} height={30} />
+                  <Image src={"/sidebaricons/Path.png"} width={30} height={30}  alt='img'/>
                 </div>
                 <div className={style.avatar1}>
-                  <Image src={"/sidebaricons/Path.png"} width={30} height={30} />
+                  <Image src={"/sidebaricons/Path.png"} width={30} height={30}  alt='img'/>
                 </div>             
               </div>
             </div>
             <div className={style.invite}>
               <h5>Invite a friend and get $15</h5>
               <p>Give a friend promo code on Expedier and
-you'll get $15 immediately they Register.</p>
+you&apos;ll get $15 immediately they Register.</p>
               <div>
                 <div className={`${style.invite_username} m-auto d-flex justify-content-center align-items-center text-align-center mb-3`}>
                     <MdCopyAll /><span className='px-1'>JOHN 2315</span>
