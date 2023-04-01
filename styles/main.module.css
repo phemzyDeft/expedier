@@ -138,3 +138,8 @@
   background: #BFDEFF;
   border-radius: 20px;
 }
+
+.invite_username{
+  border: 2px dashed blue;
+  border-radius: 50px;
+}

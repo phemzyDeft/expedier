@@ -3,13 +3,14 @@ import Image from 'next/image'
 import style from '../styles/main.module.css'
 import Link from 'next/link'
 import Table from './Table'
+import {MdCopyAll} from 'react-icons/md'
 
 const Main = () => {
   return (
     <div className='main py-4' style={{background: "#EDF3FF", marginLeft: '225px'}}>
       <div className="container">
         <div className="row">
-          <div className="col-lg-8 col-12">
+          <div className="col-lg-8 col-md-12 col-12">
             <div className={`main_container`}>
               <div className="head d-flex mb-2 align-items-center justify-content-between">
                 <div className={`${style.title}`}>
@@ -83,7 +84,7 @@ const Main = () => {
               <Table />
             </div>
           </div>
-          <div className='col-lg-4 col-12'>
+          <div className='col-lg-4 col-md-12 col-12'>
             <p>Business Card</p>
             <div className={`${style.creditcard_container}`}>
               <div className='d-flex justify-content-between align-items-center my-auto'>
@@ -130,7 +131,12 @@ const Main = () => {
               </div>
             </div>
             <div className={style.invite}>
-
+              <h5>Invite a friend and get $15</h5>
+              <p>Give a friend promo code on Expedier and
+you'll get $15 immediately they Register.</p>
+              <div className={`${style.invite_username} m-auto d-flex justify-content-center align-items-center text-align-center`}>
+                  <MdCopyAll /><span className='px-1'>JOHN 2315</span>
+              </div>
             </div>
           </div>
         </div>
