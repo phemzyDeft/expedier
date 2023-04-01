@@ -11,47 +11,47 @@ const Sidebar = () => {
         <div className="sidebar_container">
           <ul>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/Vector.png"} height={15} width={19} className={`me-3`}/>
+              <Image src={"/sidebaricons/Vector.png"} height={19} width={19} className={`me-3`}/>
               Home
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/product.png"} height={17} width={20} className={`me-3`}/>
+              <Image src={"/sidebaricons/product.png"} height={19} width={20} className={`me-3`}/>
               Product & Services              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/user.png"} height={15} width={19} className={`me-3`}/>
+              <Image src={"/sidebaricons/user.png"} height={19} width={19} className={`me-3`}/>
               Transactions              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/user.png"} height={15} width={19} className={`me-3`}/>
+              <Image src={"/sidebaricons/user.png"} height={19} width={19} className={`me-3`}/>
               Customers              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/invoice.png"} height={15} width={19} className={`me-3`}/>
+              <Image src={"/sidebaricons/invoice.png"} height={19} width={19} className={`me-3`}/>
               Invoice              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/invoice.png"} height={15} width={19} className={`me-3`}/>
+              <Image src={"/sidebaricons/invoice.png"} height={19} width={19} className={`me-3`}/>
               Bills              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/invoice.png"} height={15} width={19} className={`me-3`}/>
+              <Image src={"/sidebaricons/invoice.png"} height={19} width={19} className={`me-3`}/>
               Payment Links               
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/card.png"} height={15} width={19} className={`me-3`}/>
+              <Image src={"/sidebaricons/card.png"} height={19} width={19} className={`me-3`}/>
               Cards              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/account.png"} height={15} width={19} className={`me-3`}/>
+              <Image src={"/sidebaricons/account.png"} height={19} width={19} className={`me-3`}/>
               My Account              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/more.png"} height={15} width={19} className={`me-3`}/>
+              <Image src={"/sidebaricons/more.png"} height={19} width={19} className={`me-3`}/>
               More              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/logout.png"} height={15} width={19} className={`me-3`}/>
+              <Image src={"/sidebaricons/logout.png"} height={19} width={19} className={`me-3`}/>
               Logout              
             </li>
             

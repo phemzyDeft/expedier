@@ -137,9 +137,20 @@
 .invite{
   background: #BFDEFF;
   border-radius: 20px;
+  padding: 1rem;
+  text-align: center;
 }
 
 .invite_username{
   border: 2px dashed blue;
-  border-radius: 50px;
+  width: 200px;
+  background: rgba(252, 252, 254, 0.25);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25), 0px -1px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 29px;
+}
+
+.invite_usrname{
+  background: #001856;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25), 0px -1px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 29px;
 }

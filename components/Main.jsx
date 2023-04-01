@@ -134,8 +134,13 @@ const Main = () => {
               <h5>Invite a friend and get $15</h5>
               <p>Give a friend promo code on Expedier and
 you'll get $15 immediately they Register.</p>
-              <div className={`${style.invite_username} m-auto d-flex justify-content-center align-items-center text-align-center`}>
-                  <MdCopyAll /><span className='px-1'>JOHN 2315</span>
+              <div>
+                <div className={`${style.invite_username} m-auto d-flex justify-content-center align-items-center text-align-center mb-3`}>
+                    <MdCopyAll /><span className='px-1'>JOHN 2315</span>
+                </div>
+                <div className={`${style.invite_usrname} m-auto d-flex justify-content-center align-items-center text-align-center`}>
+                    <MdCopyAll /><span className='px-1'>Invite Friends</span>
+                </div>
               </div>
             </div>
           </div>
