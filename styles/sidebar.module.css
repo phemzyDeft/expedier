@@ -1,18 +1,38 @@
+.container{
+  position: fixed;
+  height: calc(100vh);
+  top: 20vh;
+  width: 250px;
+  background-color: #FFFFFF;
+  border-right: 1px solid #ccc;
+}
+
+.head{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+}
+
 .list{
   list-style: none;
   text-decoration: none;
-  font-size: .9rem;
-  font-weight: 500;
-  color: blue;
+  color: #007BFF;
   display: flex;
+  font-style: normal;
   align-items: center;
-  padding: 1rem 0;
+
+  width: 190px;
+  height: 50px;
 }
 
 .list:hover{
   background: rgba(54, 54, 232, 0.2);
-  padding: 1rem .5rem;
-  border-radius: 10px 0 0 10px;
-  border-right: 5px solid rgba(32, 32, 202, 0.442);
+  padding: .8rem .5rem;
+  border-right: 5px solid #A6D1FF;
   cursor: pointer;
+  background: #E9F1FF;
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
 }

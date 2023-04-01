@@ -1,3 +1,13 @@
+
+.header{
+  background: #FFFFFF;
+  box-shadow: 8px -1px 10px rgba(0, 0, 0, 0.1);
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .search_bar{
   border: none;
   outline: none;
@@ -8,15 +18,31 @@
   outline: none;
 }
 
-.notification{
-  display: flex;
-  background: blue;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+.search_bar::placeholder{
+  font-size: .8rem;
+}
+
+.notify{
+  background: #F5F5F5;
+  border-radius: 100%;
   text-align: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.notification{
+  background: #007BFF;
+  border-radius: 100%;
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
   color: white;
-  padding: .6rem;
-  font-size: .6rem;
-  font-weight: 600;
+  font-weight: bold;
+}
+.notification:hover{
+  color: white;
 }
