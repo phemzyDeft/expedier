@@ -15,7 +15,7 @@ const Sidebar = () => {
               Home
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/product.png"} height={19} width={20} className={`me-3`} alt="img"/>
+              <Image src={"/sidebaricons/product.png"} height={19} width={19} className={`me-3`} alt="img"/>
               Product & Services              
             </li>
             <li className={`${styles.list} m-auto`}>
