@@ -32,9 +32,7 @@ const Main = () => {
                   <p className={`${style.card_box_user_name}`}>John Doe (John4483)</p>
                 </div>
                 <div className={`${style.mycard}`}>
-                  <div className={style.mycard_img}>
-                    <Image src={"/sidebaricons/expedier_card_logo.png"} height={50} width={50} className={`${style.mycardimg}`}/>
-                  </div>
+                  <Image src={"/sidebaricons/expedier_card.png"} height={60} width={52} />
                   <div className={`${style.validcard}`}>
                     <p className={`${style.cardnumber}`}>VALID <br /> CARD</p>
                     <p className={`${style.cardnumber}`}>06 / 23</p>
@@ -128,10 +126,9 @@ const Main = () => {
                 <Image src={"/sidebaricons/avatar4.png"} width={50} height={50}  alt='img'/>
               </div>             
             </div>
-            <div className={style.invite}>
+            <div className={`${style.invite}`}>
               <h5>Invite a friend and get $15</h5>
-              <p>Give a friend promo code on Expedier and
-you&apos;ll get $15 immediately they Register.</p>
+              <p style={{fontSize: '14px', color: '#222222'}}>Give a friend promo code on Expedier and you&apos;ll get $15 immediately they Register.</p>
               <div>
                 <div className={`${style.invite_username} m-auto d-flex justify-content-center align-items-center text-align-center mb-3`}>
                     <MdCopyAll /><span className='px-1'>JOHN 2315</span>
@@ -139,6 +136,16 @@ you&apos;ll get $15 immediately they Register.</p>
                 <div className={`${style.invite_usrname} m-auto d-flex justify-content-center align-items-center text-align-center`}>
                     <MdCopyAll /><span className='px-1 text-white'>Invite Friends</span>
                 </div>
+              </div>
+            </div>
+            <div className='s%r d-flex justify-content-between pt-3'>
+              <div className={`${style.amountearn} w-50 h-25 me-4 text-white`}>
+                <p style={{ color: '#DCF88E'}}>$350</p>
+                <p>Amount Earned</p>
+              </div>
+              <div className={`${style.amountearn} w-50 h-25 text-white`}>
+                <p>$350</p>
+                <p>Amount Earned</p>
               </div>
             </div>
           </div>

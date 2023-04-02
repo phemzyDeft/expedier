@@ -45,20 +45,6 @@
   justify-content: space-between;
 }
 
-.mycard_img{
-  background: white;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mycardimg{
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
 .validcard{
   display: flex;
   align-items: center;
@@ -146,7 +132,8 @@
   background: rgba(252, 252, 254, 0.25);
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25), 0px -1px 10px rgba(0, 0, 0, 0.25);
   border-radius: 29px;
-  padding: .5rem 0;
+  padding: .3rem 0;
+  cursor: pointer;
 }
 
 .invite_usrname{
@@ -155,4 +142,16 @@
   border-radius: 29px;
   width: 200px;
   padding: .5rem 0;
+}
+
+.amountearn{
+  background: #001856;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 1rem 0;
+  line-height: .7;
+  font-weight: 500;
 }
