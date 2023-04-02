@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Table from './Table'
 import {MdCopyAll} from 'react-icons/md'
 import Selectacctofund from './overlays/Selectacctofund'
-import Cards from './Cards'
+import Cards from './cards/Card1'
 
 const Main = () => {
 
@@ -43,10 +43,10 @@ const Main = () => {
                   </button>
 
                   <div className={`sidebar-overlay ${isOpen ? 'open' : ''}`} onClick={handleOverlayClick}>
-                    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+                    <div className={`sidebar ${isOpen ? 'open' : ''}`} style={{padding: '.5rem 2rem'}}>
                       <p style={{textAlign: 'center', letterSpacing: '-0.165px', color: '#007BFF', padding: '1rem 0 0'}}>Select Account to Fund</p>
                       <Selectacctofund />
-                      <button className='btn btn-lg w-100' onClick={handleSidebarClose} style={{background: '#C8D7FF', borderRadius: '6px', fontSize: '.8rem', fontWeight: '600'}}>Cancel</button>
+                      <button className='btn btn-lg w-100 my-4' onClick={handleSidebarClose} style={{background: '#C8D7FF', borderRadius: '6px', fontSize: '.8rem', fontWeight: '600'}}>Cancel</button>
                     </div>
                   </div>
 

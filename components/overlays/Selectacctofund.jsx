@@ -1,10 +1,10 @@
 import React from 'react'
-import Cards from '../Cards'
+import Card2 from '../cards/Card2'
 
 
 const Selectacctofund = () => {
   return (
-    <Cards />
+    <Card2 />
   )
 }
 
