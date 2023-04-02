@@ -7,7 +7,7 @@ import {MdCopyAll} from 'react-icons/md'
 
 const Main = () => {
   return (
-    <div className='main py-4' style={{background: "#EDF3FF", marginLeft: '225px'}}>
+    <div className='main py-4 px-3' style={{background: "#EDF3FF", marginLeft: '225px'}}>
       <div className="container">
         <div className="row">
           <div className="col-lg-8 col-md-12 col-12">
@@ -18,7 +18,7 @@ const Main = () => {
                   <p className={`${style.sub_title}`}>Realtime Insight on various activities</p>
                 </div>
                 <div className={`${style.fundwallet}`}>
-                  <button className='btn .btn-primary' style={{background: "#007BFF", borderRadius: '3px', color: 'white', padding: "10px"}}>
+                  <button className='btn .btn-primary btn-sm' style={{background: "#007BFF", borderRadius: '3px', color: 'white', padding: "10px"}}>
                     <Image src={"/sidebaricons/fw_btn.png"} width={20} height={20} />
                     <span className='fw-bold ps-2'>FUND WALLET</span>
                   </button>
@@ -27,7 +27,7 @@ const Main = () => {
               <div className={`${style.card} card_box px-4 py-3 text-white`}>
                 <div className="acc_details">
                   <p className={`${style.card_box_title}`}>Total Business Account Balance</p>
-                  <h3 className={`${style.card_box_balance}`}>$5790.00 <span><Image src={"/sidebaricons/shape.png"} width={15} height={15}/></span></h3>
+                  <h3 className={`${style.card_box_balance}`}>$5,790.00 <span style={{cursor: 'pointer'}}><Image src={"/sidebaricons/shape.png"} width={15} height={15}/></span></h3>
                   <h3 className={`${style.card_box_balance}`}>5355   0348   ****  **** </h3>
                   <p className={`${style.card_box_user_name}`}>John Doe (John4483)</p>
                 </div>
@@ -75,7 +75,7 @@ const Main = () => {
                   </Link>
                 </div>
               </div>
-              <div className={`d-flex align-items-end justify-content-end`}>
+              <div className={`d-flex align-items-end justify-content-end my-3`}>
                 <select name="" id="" className={`${style.filter_btn} px-5 py-2`}>
                 {/* <Image src={"/sidebaricons/calendar.png"} width={30} height={30}/> */}
                   <option value="Monthly" >Monthly</option>
@@ -88,7 +88,7 @@ const Main = () => {
             <p>Business Card</p>
             <div className={`${style.creditcard_container}`}>
               <div className='d-flex justify-content-between align-items-center my-auto pb-3'>
-                <div>credit card</div>
+                <div>Credit card</div>
                 <Image className={`${style.creditcard_logo}`} src={"/images/expedier_logo.svg"} width={100} height={20}/>
               </div>
               <p>1234 5678 9101 1121</p>
@@ -97,38 +97,36 @@ const Main = () => {
                 <p>06/21</p>
               </div>
             </div>`
-            <div className='s%r d-flex justify-content-evenly pt-3'>
-              <div className={`${style.sendmoney_container}`}>
+            <div className='s%r d-flex justify-content-between pt-3'>
+              <div className={`${style.sendmoney_container} w-50 me-4`}>
                 <Image src={"/sidebaricons/money-send.png"} width={30} height={30} alt='img'/>
                 <p>Send Money</p>
               </div>
-              <div className={`${style.receivemoney_container}`}>
+              <div className={`${style.receivemoney_container} w-50`}>
                 <Image src={"/sidebaricons/money-recive.png"} width={30} height={30} alt='img'/>
-                <p>Send Money</p>
+                <p>Receive Money</p>
               </div>
             </div>
-            <div className='d-flex justify-content-between py-3'>
+            <div className='d-flex justify-content-between pt-4'>
               <p>Employees</p>
-              <p>SEE ALL</p>
+              <p style={{fontSize: "12px", color: "#007BFF", cursor: 'pointer' }}>SEE ALL</p>
             </div>
-            <div>
-              <div className="container d-flex justify-content-between pb-4">
-                <div className={`${style.avatar1} d-flex align-items-center justify-content-center px-3`}>
-                  <Image src={"/sidebaricons/Path.png"} width={30} height={30}  alt='img'/>
-                </div>
-                <div className={`${style.avatar2} mx-1`}>
-                  <Image src={"/sidebaricons/avatar1.png"} width={60} height={60}  alt='img'/>
-                </div>
-                <div className={`${style.avatar2} mx-1`}>
-                  <Image src={"/sidebaricons/avatar2.png"} width={60} height={60}  alt='img'/>
-                </div>  
-                <div className={`${style.avatar2} mx-1`}>
-                  <Image src={"/sidebaricons/avatar3.png"} width={60} height={60}  alt='img'/>
-                </div>
-                <div className={`${style.avatar2}`}>
-                  <Image src={"/sidebaricons/avatar4.png"} width={60} height={60}  alt='img'/>
-                </div>             
+            <div className=".container d-flex justify-content-between pb-4">
+              <div className={`${style.avatar1} d-flex align-items-center justify-content-center px-3`}>
+                <Image src={"/sidebaricons/Path.png"} width={30} height={30}  alt='img'/>
               </div>
+              <div className={`${style.avatar2} mx-1`}>
+                <Image src={"/sidebaricons/avatar1.png"} width={50} height={50}  alt='img'/>
+              </div>
+              <div className={`${style.avatar2} mx-1`}>
+                <Image src={"/sidebaricons/avatar2.png"} width={50} height={50}  alt='img'/>
+              </div>  
+              <div className={`${style.avatar2} mx-1`}>
+                <Image src={"/sidebaricons/avatar3.png"} width={50} height={50}  alt='img'/>
+              </div>
+              <div className={`${style.avatar2}`}>
+                <Image src={"/sidebaricons/avatar4.png"} width={50} height={50}  alt='img'/>
+              </div>             
             </div>
             <div className={style.invite}>
               <h5>Invite a friend and get $15</h5>
