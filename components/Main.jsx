@@ -41,7 +41,7 @@ const Main = () => {
                   </div>
                 </div>
               </div>
-              <div className='cards py-3'>
+              <div className='cards' style={{margin: '2rem 0'}}>
                 <div className="row">
                   <Link href={"/account"} className={`${style.card_container} col`}>
                     <div className={`${style.currency}`}>
