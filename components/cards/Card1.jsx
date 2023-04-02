@@ -10,7 +10,7 @@ const Cards = () => {
         <div className="row">
           <Link href={"/account"} className={`${style.card_container} col`}>
             <div className={`${style.currency}`}>
-              <Image src={"/sidebaricons/country2.png"} width={30} height={20}/>
+              <Image src={"/sidebaricons/country2.png"} width={30} height={20} alt='img'/>
               <p className='px-2'>Balance</p>
             </div>
             <div className="balance">
@@ -20,7 +20,7 @@ const Cards = () => {
           </Link>
           <Link href={"/account"} className={`${style.card_container} col`}>
             <div className={`${style.currency}`}>
-              <Image src={"/sidebaricons/country1.png"} width={30} height={20}/>
+              <Image src={"/sidebaricons/country1.png"} width={30} height={20} alt='img'/>
               <p className='px-2'>Balance</p>
             </div>
             <div className="balance">
@@ -30,7 +30,7 @@ const Cards = () => {
           </Link>
           <Link href={"/account"} className={`${style.card_container} col`}>
             <div className={`${style.currency}`}>
-              <Image src={"/sidebaricons/country1.png"} width={30} height={20}/>
+              <Image src={"/sidebaricons/country1.png"} width={30} height={20} alt='img'/>
               <p className='px-2'>Balance</p>
             </div>
             <div className="balance">

@@ -28,7 +28,7 @@ const Card2 = () => {
         <div className="row">
           <div className={`${style.card_container} col my-2`} onClick={handleSidebarOpen}>
             <div className={`${style.currency}`}>
-              <Image src={"/sidebaricons/country2.png"} width={30} height={20}/>
+              <Image src={"/sidebaricons/country2.png"} width={30} height={20} alt='img'/>
               <p className='px-2'>Balance</p>
             </div>
             <div className="balance">
@@ -46,7 +46,7 @@ const Card2 = () => {
 
           <div className={`${style.card_container} col my-2`}>
             <div className={`${style.currency}`}>
-              <Image src={"/sidebaricons/country1.png"} width={30} height={20}/>
+              <Image src={"/sidebaricons/country1.png"} width={30} height={20} alt='img'/>
               <p className='px-2'>Balance</p>
             </div>
             <div className="balance">
@@ -56,7 +56,7 @@ const Card2 = () => {
           </div>
           <div className={`${style.card_container} col my-2`}>
             <div className={`${style.currency}`}>
-              <Image src={"/sidebaricons/country1.png"} width={30} height={20}/>
+              <Image src={"/sidebaricons/country1.png"} width={30} height={20} alt='img'/>
               <p className='px-2'>Balance</p>
             </div>
             <div className="balance">

@@ -38,7 +38,7 @@ const Main = () => {
                 </div>
                 <div className={`${style.fundwallet}`}>
                   <button className='btn .btn-primary btn-sm' style={{background: "#007BFF", borderRadius: '3px', color: 'white', padding: "10px"}} onClick={handleSidebarOpen}>
-                    <Image src={"/sidebaricons/fw_btn.png"} width={20} height={20} />
+                    <Image src={"/sidebaricons/fw_btn.png"} width={20} height={20} alt='img'/>
                     <span className='fw-bold ps-2'>FUND WALLET</span>
                   </button>
 
@@ -55,14 +55,14 @@ const Main = () => {
               <div className={`${style.card} card_box px-4 py-3 text-white`}>
                 <div className="acc_details">
                   <p className={`${style.card_box_title}`}>Total Business Account Balance</p>
-                  <h3 className={`${style.card_box_balance}`}>$5,790.00 <span style={{cursor: 'pointer'}}><Image src={"/sidebaricons/shape.png"} width={15} height={15}/></span></h3>
+                  <h3 className={`${style.card_box_balance}`}>$5,790.00 <span style={{cursor: 'pointer'}}><Image src={"/sidebaricons/shape.png"} width={15} height={15} alt='img'/></span></h3>
                   <h3 className={`${style.card_box_balance}`}>5355   0348   ****  **** </h3>
                   <p className={`${style.card_box_user_name}`}>John Doe (John4483)</p>
                 </div>
                 <div className={`${style.mycard}`}>
-                  <Image src={"/sidebaricons/expedier_card.png"} height={60} width={52} />
+                  <Image src={"/sidebaricons/expedier_card.png"} height={60} width={52} alt='img' />
                   <div className={`${style.validcard}`}>
-                    <p className={`${style.cardnumber}`}>VALID <br /> CARD</p>
+                    <p className={`${style.cardnumber} me-1`}>VALID <br /> THRU</p>
                     <p className={`${style.cardnumber}`}>06 / 23</p>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ const Main = () => {
             <div className={`${style.creditcard_container}`}>
               <div className='d-flex justify-content-between align-items-center my-auto pb-3'>
                 <div>Credit card</div>
-                <Image className={`${style.creditcard_logo}`} src={"/images/expedier_logo.svg"} width={100} height={20}/>
+                <Image className={`${style.creditcard_logo}`} src={"/images/expedier_logo.svg"} width={100} height={20} alt='img'/>
               </div>
               <p>1234 5678 9101 1121</p>
               <div className='d-flex align-items-center justify-content-between'>
