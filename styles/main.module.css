@@ -101,6 +101,7 @@
   padding: 1rem 1rem;
   border-radius: 5px;
   text-align: center;
+  cursor: pointer;
 }
 
 .receivemoney_container{
@@ -109,6 +110,7 @@
   background: #007BFF;
   border-radius: 5px;
   color: white;
+  cursor: pointer;
 }
 
 .avatar1{
@@ -122,7 +124,7 @@
   margin-top: 10px;
   background: #BFDEFF;
   border-radius: 20px;
-  padding: 1rem;
+  padding: .7rem 1rem;
   text-align: center;
 }
 

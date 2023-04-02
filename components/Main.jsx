@@ -95,7 +95,7 @@ const Main = () => {
                 <p>06/21</p>
               </div>
             </div>`
-            <div className='s%r d-flex justify-content-between pt-3'>
+            <div className='s%r d-flex justify-content-between'>
               <div className={`${style.sendmoney_container} w-50 me-4`}>
                 <Image src={"/sidebaricons/money-send.png"} width={30} height={30} alt='img'/>
                 <p>Send Money</p>
@@ -127,7 +127,7 @@ const Main = () => {
               </div>             
             </div>
             <div className={`${style.invite}`}>
-              <h5>Invite a friend and get $15</h5>
+              <h6>Invite a friend and get $15</h6>
               <p style={{fontSize: '14px', color: '#222222'}}>Give a friend promo code on Expedier and you&apos;ll get $15 immediately they Register.</p>
               <div>
                 <div className={`${style.invite_username} m-auto d-flex justify-content-center align-items-center text-align-center mb-3`}>
