@@ -44,9 +44,9 @@ const Main = () => {
 
                   <div className={`sidebar-overlay ${isOpen ? 'open' : ''}`} onClick={handleOverlayClick}>
                     <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-                      {/* <button onClick={handleSidebarClose}>Close Sidebar</button> */}
                       <p style={{textAlign: 'center', letterSpacing: '-0.165px', color: '#007BFF', padding: '1rem 0 0'}}>Select Account to Fund</p>
                       <Selectacctofund />
+                      <button className='btn btn-lg w-100' onClick={handleSidebarClose} style={{background: '#C8D7FF', borderRadius: '6px', fontSize: '.8rem', fontWeight: '600'}}>Cancel</button>
                     </div>
                   </div>
 
