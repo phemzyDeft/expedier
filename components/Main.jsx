@@ -1,11 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import style from '../styles/main.module.css'
 import Link from 'next/link'
 import Table from './Table'
 import {MdCopyAll} from 'react-icons/md'
+import Selectacctofund from './overlays/Selectacctofund'
+import Cards from './Cards'
 
 const Main = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleSidebarOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleSidebarClose = () => {
+    setIsOpen(false);
+  };
+
+  const handleOverlayClick = (event) => {
+    if (event.target.classList.contains('sidebar-overlay')) {
+      handleSidebarClose();
+    }
+  };
+
   return (
     <div className='main py-4 px-3' style={{background: "#EDF3FF", marginLeft: '225px'}}>
       <div className="container">
@@ -18,10 +37,19 @@ const Main = () => {
                   <p className={`${style.sub_title}`}>Realtime Insight on various activities</p>
                 </div>
                 <div className={`${style.fundwallet}`}>
-                  <button className='btn .btn-primary btn-sm' style={{background: "#007BFF", borderRadius: '3px', color: 'white', padding: "10px"}}>
+                  <button className='btn .btn-primary btn-sm' style={{background: "#007BFF", borderRadius: '3px', color: 'white', padding: "10px"}} onClick={handleSidebarOpen}>
                     <Image src={"/sidebaricons/fw_btn.png"} width={20} height={20} />
                     <span className='fw-bold ps-2'>FUND WALLET</span>
                   </button>
+
+                  <div className={`sidebar-overlay ${isOpen ? 'open' : ''}`} onClick={handleOverlayClick}>
+                    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+                      {/* <button onClick={handleSidebarClose}>Close Sidebar</button> */}
+                      <p style={{textAlign: 'center', letterSpacing: '-0.165px', color: '#007BFF', padding: '1rem 0 0'}}>Select Account to Fund</p>
+                      <Selectacctofund />
+                    </div>
+                  </div>
+
                 </div>
               </div>
               <div className={`${style.card} card_box px-4 py-3 text-white`}>
@@ -39,40 +67,7 @@ const Main = () => {
                   </div>
                 </div>
               </div>
-              <div className='cards' style={{margin: '2rem 0'}}>
-                <div className="row">
-                  <Link href={"/account"} className={`${style.card_container} col`}>
-                    <div className={`${style.currency}`}>
-                      <Image src={"/sidebaricons/country2.png"} width={30} height={20}/>
-                      <p className='px-2'>Balance</p>
-                    </div>
-                    <div className="balance">
-                      <h4 className={`${style.balance}`}>4,509,063</h4>
-                    </div>
-                    <p className={`${style.cardnumber}`}>Canadian Dollar</p>
-                  </Link>
-                  <Link href={"/account"} className={`${style.card_container} col`}>
-                    <div className={`${style.currency}`}>
-                      <Image src={"/sidebaricons/country1.png"} width={30} height={20}/>
-                      <p className='px-2'>Balance</p>
-                    </div>
-                    <div className="balance">
-                      <h4 className={`${style.balance}`}>4,509,063</h4>
-                    </div>
-                    <p className={`${style.cardnumber}`}>Nigerian Naira</p>
-                  </Link>
-                  <Link href={"/account"} className={`${style.card_container} col`}>
-                    <div className={`${style.currency}`}>
-                      <Image src={"/sidebaricons/country1.png"} width={30} height={20}/>
-                      <p className='px-2'>Balance</p>
-                    </div>
-                    <div className="balance">
-                      <h4 className={`${style.balance}`}>4,509,063</h4>
-                    </div>
-                    <p className={`${style.cardnumber}`}>US Dollars</p>
-                  </Link>
-                </div>
-              </div>
+              <Cards />
               <div className={`d-flex align-items-end justify-content-end my-3`}>
                 <select name="" id="" className={`${style.filter_btn} px-5 py-2`}>
                 {/* <Image src={"/sidebaricons/calendar.png"} width={30} height={30}/> */}

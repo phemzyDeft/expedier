@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Sidebar = () => {
   return (
-    <div className='sidebar mx-0 px-0 py-4'>
+    <div className='sidebar_menu mx-0 px-0 py-4'>
       <div className="container mx-0 px-0">
         <div className="sidebar_container">
           <ul>
