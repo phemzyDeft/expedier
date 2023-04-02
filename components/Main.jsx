@@ -137,7 +137,7 @@ you&apos;ll get $15 immediately they Register.</p>
                     <MdCopyAll /><span className='px-1'>JOHN 2315</span>
                 </div>
                 <div className={`${style.invite_usrname} m-auto d-flex justify-content-center align-items-center text-align-center`}>
-                    <MdCopyAll /><span className='px-1'>Invite Friends</span>
+                    <MdCopyAll /><span className='px-1 text-white'>Invite Friends</span>
                 </div>
               </div>
             </div>
