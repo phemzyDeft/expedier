@@ -22,27 +22,24 @@
   font-size: .8rem;
 }
 
-.notify{
+.notify, .notification{
   background: #F5F5F5;
-  border-radius: 100%;
+  border-radius: 50%;
   text-align: center;
-  padding: 5px;
+  padding: .4rem;
   display: flex;
+  height: 20%;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: .7rem;
 }
 
 .notification{
   background: #007BFF;
-  border-radius: 100%;
-  text-align: center;
-  padding: 1px;
-  display: flex;
-  align-items: center;
-  justify-items: center;
   color: white;
-  font-weight: bold;
 }
+
 .notification:hover{
   color: white;
 }

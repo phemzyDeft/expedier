@@ -10,6 +10,12 @@ a{
   text-decoration: none;
 }
 
+input:focus{
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+}
+
+
 .sidebar-overlay {
   position: fixed;
   top: 0;

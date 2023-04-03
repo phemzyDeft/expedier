@@ -25,9 +25,9 @@ const Header = () => {
             </div>
             <div className="end .col-2 mx-5">
               <div className="notification_container d-flex align-items-center justify-content-center .text-center">
-                <Link href={"/"} className={`${style.notify}`} height={19} width={19}><Image src={"/sidebaricons/inactive.png"} height={19} width={19} alt='img'/></Link>
-                <Link href={"/"} className={`${style.notification} mx-3`} height={19} width={19}>CV</Link>
-                <Link href={"/"} style={{color: 'black'}}>canada vendor</Link>
+                <p href={"/"} className={`${style.notify}`}><Image src={"/sidebaricons/inactive.png"} height={19} width={19} alt='img'/></p>
+                <p href={"/"} className={`${style.notification} mx-3`}>CV</p>
+                <p href={"/"} style={{color: 'black'}}>canada vendor</p>
               </div>
             </div>
 
