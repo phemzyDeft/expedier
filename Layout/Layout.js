@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       </div>
       <div className="container-fluid px-0" style={{ overflowX: "hidden" }}>
         <div className="row">
-          <div style={{ marginTop: "128px"}}>
+          <div style={{ marginTop: "100px"}}>
             <div className={`${style.container} col-lg-2 position-fixed`}>
               <Sidebar />
             </div>
