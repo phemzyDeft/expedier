@@ -55,7 +55,12 @@ const Main = () => {
               <div className={`${style.card} card_box px-4 py-3 text-white`}>
                 <div className="acc_details">
                   <p className={`${style.card_box_title}`}>Total Business Account Balance</p>
-                  <h3 className={`${style.card_box_balance}`}>$5,790.00 <span style={{cursor: 'pointer'}}><Image src={"/sidebaricons/shape.png"} width={15} height={15} alt='img'/></span></h3>
+                  <div className='d-flex align-items-center .bg-success'>
+                    <span className={`${style.card_box_balance}`}>$5,790.00</span>
+                    <span >
+                      <Image style={{cursor: 'pointer'}} src={"/sidebaricons/shape.png"} width={15} height={15} alt='img'/>
+                    </span>
+                  </div>
                   <h3 className={`${style.card_box_balance}`}>5355   0348   ****  **** </h3>
                   <p className={`${style.card_box_user_name}`}>John Doe (John4483)</p>
                 </div>

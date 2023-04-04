@@ -1,0 +1,60 @@
+        <div className={`${style.inputwrapper} position-relative mt-3`}>
+          <div
+            className="px-3 .me-5"
+            style={{
+              borderRight: '1px solid #B6B6B6',
+              color: '#B6B6B6'
+            }}
+          >
+            <IoMdLock/>
+          </div>
+          <div className={`form-floating password mx-3 w-100`} style={{color: '#808080'}}>
+            <input
+              type="password"
+              className="form-control border-0 w-100"
+              id="floatingInput"
+              placeholder="Password"
+              name="password"
+              required
+              style={{background: 'transparent'}}
+            />
+            <label htmlFor="floatingInput">Password</label>
+          </div>
+        </div>
+
+
+
+
+
+import { useRouter } from 'next/router'
+
+function Layout({ children }) {
+  const router = useRouter()
+
+  // Check if the current route is login or signup
+  const isAuthRoute = router.pathname === '/login' || router.pathname === '/signup'
+
+  return (
+    <>
+      {!isAuthRoute && (
+        <div className={`${style.head}`}>
+          <Header />
+        </div>
+      )}
+
+      <div className="container-fluid px-0" style={{ overflowX: "hidden" }}>
+        <div className="row">
+          <div style={{ marginTop: "100px" }}>
+            {!isAuthRoute && (
+              <div className={`${style.container} col-lg-2 position-fixed`}>
+                <Sidebar />
+              </div>
+            )}
+            <div className={`col-lg-12 ${isAuthRoute ? '' : 'offset-lg-2'}`}>{children}</div>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+

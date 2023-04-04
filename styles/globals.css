@@ -6,6 +6,21 @@
   padding: 0;
 }
 
+.btn:focus, .btn2:focus{
+  box-shadow: none;
+}
+
+.form-control:focus{
+  box-shadow: none;
+  /* font-size: .8rem; */
+}
+
+
+.form-control::placeholder{
+  box-shadow: none;
+  font-size: .3rem;
+}
+
 a{
   text-decoration: none;
 }

@@ -4,7 +4,9 @@ import React from 'react'
 const account = () => {
   return (
     <>
-      <Accountverification />
+      <div>
+        <Accountverification />
+      </div>
     </>
   )
 }

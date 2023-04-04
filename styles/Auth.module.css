@@ -1,0 +1,76 @@
+.auth{
+  width: 100%;
+  min-height: 100%;
+  background: lightblue;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.auth_text{
+  color: white;
+  line-height: 40px;
+  font-family: 'DM Sans';
+  width: 40%;
+}
+
+.registercontainer{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 40px;
+  position: absolute;
+  top: 60px;
+  left: 792px;
+  padding: 5rem 2rem;
+  width: 38%;
+}
+
+.search_bar{
+  border: none;
+  outline: none;
+}
+
+.search_bar::placeholder{
+  color: #808080;
+  font-size: 14px;
+}
+
+.search_bar:focus{
+  border: none;
+  outline: none;
+}
+
+.forgotpasswordlink{
+  font-size: 14px;
+  cursor: pointer;
+  color: #4285F4;
+}
+
+.submit{
+  background: #001856;
+  border-radius: 6px;
+  color: white;
+  font-size: .9rem;
+  font-weight: 500;
+  margin: .5rem 0;
+}
+
+.submit:hover{
+  color: white;
+}
+
+.withgoogle{
+  background: #E9F1FF;
+  border-radius: 9px;
+  font-size: .8rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: #4285F4;
+}
+
+.loginas{
+  background: #EFF8FF;
+  border-radius: 9px;
+  position: relative;
+  cursor: pointer;
+}

@@ -7,7 +7,7 @@ import Table from './Table'
 const Accountverification = () => {
   return (
     <div className={`${style.account}`}>
-      <div className="container">
+      <div className="container-fluid">
         <div className="back d-flex .align-items-center m-auto pt-3">
           <Link href={"/"} className="me-3"><span></span>Back</Link>
           <h4 style={{fontSize: "1rem"}}>CAD Account</h4>
