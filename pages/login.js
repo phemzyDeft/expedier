@@ -29,7 +29,7 @@ const login = () => {
           <h3>Expedier Account</h3>
           <p style={{ fontSize: "16px", lineHeight: "26px" }}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
+            industry. Lorem Ipsum has been the industry&apos;s standard dummy text
             ever since the 1500s,
           </p>
         </div>
