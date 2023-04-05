@@ -1,13 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import style from '../../styles/overlays/Interactransferoptions.module.css'
+import Verifyemail from './Verifyemail';
 
 const Interactransferoption = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleSidebarOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleSidebarClose = () => {
+    setIsOpen(false);
+  };
+
+  const handleOverlayClick = (event) => {
+    if (event.target.classList.contains('sidebar-overlay')) {
+      handleSidebarClose();
+    }
+  };
+
   return (
     <div>
       <div className='text-center py-1'>
         <Image src={"/fundingoptions/Interac.png"} className='rounded-circle' width={60} height={60} alt='img'/>
       </div>
+      
+      
+      <div className={`sidebar-overlay ${isOpen ? 'open' : ''}`} onClick={handleOverlayClick}>
+        <div className={`sidebar ${isOpen ? 'open' : ''}`} style={{padding: '.5rem 2rem'}}>
+          <p style={{textAlign: 'center', letterSpacing: '-0.165px', color: 'black', padding: '1rem 0 0'}}>Register your <br /> Interac Email First</p>
+          <Verifyemail />
+        </div>
+      </div>
+
+
       <p style={{color: 'black', fontSize: '.8rem', fontWeight: '600', marginTop: '3rem', fontFamily: 'DM Sans'}}>Send Funds via Interac to</p>
       <form action="">
         <div className={`${style.intinv}`}>
@@ -24,7 +52,7 @@ const Interactransferoption = () => {
       </div>
       <div className='d-grid'>
         <button className={`${style.btn} btn btn-lg`}>I’ve sent the money</button>
-        <button className={`${style.btn2} btn btn-lg`}>I’ve sent the money</button>
+        <button className={`${style.btn2} btn btn-lg`} onClick={handleSidebarOpen}>Register another Interac email</button>
       </div>
     </div>
   )

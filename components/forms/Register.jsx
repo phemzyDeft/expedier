@@ -3,7 +3,6 @@ import style from '../../styles/Auth.module.css'
 import {BiEnvelope} from 'react-icons/bi'
 import {IoMdLock} from 'react-icons/io'
 import Link from 'next/link'
-import Image from 'next/image'
 
 const Register = () => {
   return (
@@ -13,7 +12,7 @@ const Register = () => {
         <div class="row g-3">
           <div class="col">
             <label htmlFor="firstname" style={{fontSize: '13px', fontWeight: '500', margin: '0 0 8px'}}>Enter your First Name</label>
-            <input type="text" class="form-control" id='firstname' placeholder="Last name" style={{
+            <input type="text" class="form-control" id='firstname' placeholder="First name" style={{
               border: '1px solid #4285F4',
               borderRadius: '9px',
               padding: '.8rem'

@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import style from "../styles/Auth.module.css";
-import { ImCancelCircle } from "react-icons/im";
-import Forgetpassword from "@/components/forms/Forgetpassword";
+import {SlCamera} from 'react-icons/sl'
 
 const selectaccount = () => {
   return (
@@ -34,7 +33,7 @@ const selectaccount = () => {
       <div className={`${style.formcontainer}`}>
         {/* <Forgetpassword /> */}
       </div>
-      <div className="w-50 d-flex ms-5 ps-5 mt-5">
+      <div className="w-50 d-flex ms-5 ps-5 mt-5 align-items-center">
         <div className={`${style.loginas}`} style={{background: 'transparent', marginRight: '0px'}}>
           <Image src={"/authimages/user1.png"} width={70} height={70} />
         </div>
@@ -49,6 +48,9 @@ const selectaccount = () => {
         </div>
         <div className={`${style.loginas}`} style={{background: 'transparent', marginRight: '0px'}}>
           <Image src={"/authimages/user5.png"} width={70} height={70} />
+        </div>
+        <div className={`${style.camera}`}>
+          <SlCamera />
         </div>
       </div>
     </div>
