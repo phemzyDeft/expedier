@@ -18,7 +18,8 @@
 
 .form-control::placeholder{
   box-shadow: none;
-  font-size: .3rem;
+  color: #808080;
+  font-size: 14px;
 }
 
 a{

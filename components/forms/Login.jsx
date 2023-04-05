@@ -24,7 +24,7 @@ const Login = () => {
             >
               <BiEnvelope />
             </div>
-            <input type='email' placeholder='Username or email address' id='email' required className={`${style.search_bar} w-100 ps-3`}/>
+            <input type='email' placeholder='Username or email address' id='email' required className={`${style.input} w-100 ps-3`}/>
           </div>
         </div>
         <div className='mt-4'>
@@ -41,7 +41,7 @@ const Login = () => {
             >
               <IoMdLock />
             </div>
-            <input type='password' placeholder='Password' required id='password' className={`${style.search_bar} w-100 ps-3`}/>
+            <input type='password' placeholder='Password' required id='password' className={`${style.input} w-100 ps-3`}/>
           </div>
         </div>
         <p className={`${style.forgotpasswordlink} float-end p-2`}>Forgot Password ?</p>

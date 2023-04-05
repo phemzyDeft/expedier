@@ -5,25 +5,27 @@ import style from "../styles/sidebar.module.css";
 import { useRouter } from "next/router";
 
 const Layout = ({ children }) => {
-
   const router = useRouter();
-  const authScreen = router.pathname === '/login';
+  const authScreen =
+    router.pathname === "/login" ||
+    router.pathname === "/register" ||
+    router.pathname === "/forgotpassword";
 
   return (
     <>
-    {!authScreen &&
-      <div className={`${style.head}`}>
-        <Header />
-      </div>
-    }
+      {!authScreen && (
+        <div className={`${style.head}`}>
+          <Header />
+        </div>
+      )}
       <div className="container-fluid px-0" style={{ overflowX: "hidden" }}>
         <div className="row">
           <div style={{ marginTop: "100px" }}>
-          {!authScreen &&
-            <div className={`${style.container} col-lg-2 position-fixed`}>
-              <Sidebar />
-            </div>
-          }
+            {!authScreen && (
+              <div className={`${style.container} col-lg-2 position-fixed`}>
+                <Sidebar />
+              </div>
+            )}
             <div className={`col-lg-12 .offset-lg-2`}>{children}</div>
           </div>
         </div>

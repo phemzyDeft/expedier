@@ -23,19 +23,20 @@
   left: 792px;
   padding: 5rem 2rem;
   width: 38%;
+  /* overflow-y: scroll; */
 }
 
-.search_bar{
+.input{
   border: none;
   outline: none;
 }
 
-.search_bar::placeholder{
+.input::placeholder{
   color: #808080;
   font-size: 14px;
 }
 
-.search_bar:focus{
+.input:focus{
   border: none;
   outline: none;
 }
