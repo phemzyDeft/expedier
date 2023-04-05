@@ -9,7 +9,9 @@ const Layout = ({ children }) => {
   const authScreen =
     router.pathname === "/login" ||
     router.pathname === "/register" ||
-    router.pathname === "/forgotpassword";
+    router.pathname === "/forgotpassword" ||
+    router.pathname === '/test' ||
+    router.pathname === '/selectaccount';
 
   return (
     <>

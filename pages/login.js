@@ -38,7 +38,7 @@ const login = () => {
         <Login />
       </div>
       <div className="w-50 d-flex ms-5 ps-5 mt-5">
-        <div className={`${style.loginas} me-4 text-center pt-3 px-3`}>
+        <div className={`${style.loginas}`}>
           <Image src={"/authimages/loginas1.png"} width={70} height={70} />
           <div style={{ lineHeight: "1px", padding: "2px 0 0" }}>
             <h6>Segun Peters</h6>
@@ -55,7 +55,7 @@ const login = () => {
             <ImCancelCircle size={12} />
           </span>
         </div>
-        <div className={`${style.loginas} .me-5 text-center pt-3 px-3`}>
+        <div className={`${style.loginas}`}>
           <Image src={"/authimages/loginas2.png"} width={70} height={70} />
           <div style={{ lineHeight: "1px", padding: "2px 0 0" }}>
             <h6>James Isreal</h6>

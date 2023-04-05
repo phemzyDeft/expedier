@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import style from "../styles/Auth.module.css";
 import { ImCancelCircle } from "react-icons/im";
+import Forgetpassword from "@/components/forms/Forgetpassword";
 // import Register from "@/components/forms/Register";
 
 const forgotpassword = () => {
@@ -35,43 +36,9 @@ const forgotpassword = () => {
         </div>
       </div>
       <div className={`${style.formcontainer}`}>
-        {/* < /> */}
+        <Forgetpassword />
       </div>
       <div className="w-50 d-flex ms-5 ps-5 mt-5">
-        <div className={`${style.loginas} me-4 text-center pt-3 px-3`}>
-          <Image src={"/authimages/loginas1.png"} width={70} height={70} />
-          <div style={{ lineHeight: "1px", padding: "2px 0 0" }}>
-            <h6>Segun Peters</h6>
-            <p style={{ fontSize: "10px" }}>Active 5 mins ago</p>
-          </div>
-          <span
-            style={{
-              position: "absolute",
-              top: "2px",
-              right: "10px",
-              cursor: "pointer",
-            }}
-          >
-            <ImCancelCircle size={12} />
-          </span>
-        </div>
-        <div className={`${style.loginas} .me-5 text-center pt-3 px-3`}>
-          <Image src={"/authimages/loginas2.png"} width={70} height={70} />
-          <div style={{ lineHeight: "1px", padding: "2px 0 0" }}>
-            <h6>James Isreal</h6>
-            <p style={{ fontSize: "10px" }}>Active 4 days ago</p>
-          </div>
-          <span
-            style={{
-              position: "absolute",
-              top: "2px",
-              right: "10px",
-              cursor: "pointer",
-            }}
-          >
-            <ImCancelCircle size={12} />
-          </span>
-        </div>
       </div>
     </div>
   );

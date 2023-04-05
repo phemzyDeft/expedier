@@ -6,7 +6,7 @@ import Register from "@/components/forms/Register";
 
 const register = () => {
   return (
-    <div className={`${style.auth}`}>
+    <div className={`${style.auth} .container`}>
       <div
         style={{
           height: "50vh",

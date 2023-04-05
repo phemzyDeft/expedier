@@ -59,7 +59,7 @@ const Login = () => {
         </span>
       </div>
       <div className='text-center'>
-        <Link href={"/"} style={{fontSize: '14px', color: 'black'}}>New to Expedier? <span style={{color: '#4285F4'}}>Register</span></Link>
+        <Link href={"/register"} style={{fontSize: '14px', color: 'black'}}>New to Expedier? <span style={{color: '#4285F4'}}>Register</span></Link>
       </div>
     </div>
   )

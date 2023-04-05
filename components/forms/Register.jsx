@@ -122,18 +122,6 @@ const Register = () => {
           <button type='submit' className={`${style.submit} btn btn-lg w-100`}>Sign Up</button>
         </div>
       </form>
-      {/* <div className='my-4 text-center'>
-        <span className={`${style.withgoogle}`}><Image src={"/authimages/google.png"} width={26} height={26  }/> Sign in with Google</span>
-        <span className={`${style.withgoogle} mx-4`} style={{background: '#F7F7F7'}}>
-          <Image src={"/authimages/Facebook.png"} width={26} height={26}/>
-        </span>
-        <span className={`${style.withgoogle}`} style={{background: '#F6F6F6'}}>
-          <Image src={"/authimages/apple.png"} width={26} height={26}/>
-        </span>
-      </div> */}
-      {/* <div className='text-center'>
-        <Link href={"/"} style={{fontSize: '14px', color: 'black'}}>New to Expedier? <span style={{color: '#4285F4'}}>Register</span></Link>
-      </div> */}
     </div>
   )
 }
