@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from '../../styles/Auth.module.css'
 import {BiEnvelope} from 'react-icons/bi'
 import {IoMdLock} from 'react-icons/io'
 import Link from 'next/link'
+import {BsFillEyeSlashFill, BsFillEyeFill} from 'react-icons/bs'
 
 const Register = () => {
+
+  const [toggle, settoggle] = useState(false)
+
+  const handleToggle = () =>{
+    settoggle(!toggle)
+  }
+
   return (
     <div className={`${style.registercontainer} py-5`}>
       <h2 className='mb-3'>Sign Up.</h2>
@@ -113,7 +121,8 @@ const Register = () => {
             >
               <IoMdLock />
             </div>
-            <input type='password' placeholder='Password' required id='password' className={`${style.input} w-100 ps-3`}/>
+            <input type={toggle ? 'text' : 'password'} placeholder='Password' required id='password' className={`${style.input} w-100 ps-3`}/>
+            <span onClick={handleToggle} style={{cursor: 'pointer', color: '#B6B6B6'}}>{toggle ? <BsFillEyeSlashFill /> : <BsFillEyeFill />}</span>
           </div>
         </div>
         {/* <p className={`${style.forgotpasswordlink} float-end p-2`}>Forgot Password ?</p> */}

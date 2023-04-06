@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from '../../styles/Auth.module.css'
 import {BiEnvelope} from 'react-icons/bi'
 import {IoMdLock} from 'react-icons/io'
 import Link from 'next/link'
 import Image from 'next/image'
+import {BsFillEyeFill, BsFillEyeSlashFill} from 'react-icons/bs'
 
 const Login = () => {
+
+  const [toggle, setToggle] = useState(false)
+
+  const handleToggle = () =>{
+    setToggle(!toggle)
+  }
+
   return (
     <div className={style.registercontainer}>
       <h2 className='mb-3'>Welcome Back.</h2>
@@ -41,10 +49,11 @@ const Login = () => {
             >
               <IoMdLock />
             </div>
-            <input type='password' placeholder='Password' required id='password' className={`${style.input} w-100 ps-3`}/>
+            <input type={toggle ? 'text' : 'password'} placeholder='Password' required id='password' className={`${style.input} w-100 ps-3`}/>
+            <span onClick={handleToggle} style={{cursor: 'pointer', color: '#B6B6B6'}}>{toggle ? <BsFillEyeSlashFill /> : <BsFillEyeFill />}</span>
           </div>
         </div>
-        <p className={`${style.forgotpasswordlink} float-end p-2`}>Forgot Password ?</p>
+        <Link href={"/forgotpassword"} className={`${style.forgotpasswordlink} float-end p-2`}>Forgot Password ?</Link>
         <div>
           <button type='submit' className={`${style.submit} btn btn-lg w-100`}>Sign in</button>
         </div>
