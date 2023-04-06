@@ -28,20 +28,18 @@ const Verifyemail = () => {
 
       <div className={`sidebar-overlay ${isOpen ? 'open' : ''}`} onClick={handleOverlayClick}>
         <div className={`sidebar ${isOpen ? 'open' : ''}`} style={{padding: '.5rem 2rem'}}>
-          <p style={{textAlign: 'center', letterSpacing: '-0.165px', color: 'black', padding: '1rem 0 0'}}>Register your <br /> Interac Email First</p>
+          <p style={{textAlign: 'center', letterSpacing: '-0.165px', color: 'black', padding: '1rem 0 0'}}>Interac Transfer</p>
           <Interactfhistory />
         </div>
       </div>
 
       <p style={{color: 'rgba(0, 0, 0, 0.42)', fontSize: '12px'}}>We noticed you have never used interac before on Expedier or you want to register a new interac email. Please kindly let us know which of your interac email to expect the funds.
 Letting us know your email does not give us access to your interac or bank details but makes your transactions faster.</p>
-      <form action="">
-        <label htmlFor='email' style={{color: 'black', fontSize: '12px', fontWeight: '500'}}>Email Address</label>
-        <input type="email" id='email' placeholder='transfers@expedier.co' className={`${style.intinv} w-100`}/>
-        <div className='d-grid' onClick={handleSidebarOpen}>
-          <button className={`${style.btn} btn btn-lg`}>Register your email</button>
-        </div>
-      </form>
+      <label htmlFor='email' style={{color: 'black', fontSize: '12px', fontWeight: '500'}}>Email Address</label>
+      <input type="email" id='email' placeholder='transfers@expedier.co' className={`${style.intinv} w-100`}/>
+      <div className='d-grid' onClick={handleSidebarOpen}>
+        <button className={`${style.btn} btn btn-lg`}>Register your email</button>
+      </div>
     </div>
     )
 }

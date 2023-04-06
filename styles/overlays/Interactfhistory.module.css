@@ -1,0 +1,50 @@
+.searchintname{
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+
+.userflex{
+  display: flex;
+  align-items: center;
+  background: #FBFBFB;
+  border-radius: 10px;
+  padding: .5rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.user{
+  background: #007BFF;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.username{
+  line-height: 1px;
+  margin-left: 1rem;
+}
+
+.addnew{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.addnewicon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #007BFF;
+  box-shadow: 0px 4px 12px rgba(39, 34, 70, 0.1);
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
