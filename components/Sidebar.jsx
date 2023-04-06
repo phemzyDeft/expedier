@@ -3,6 +3,13 @@ import React from 'react'
 import Image from 'next/image'
 import styles from '../styles/sidebar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {HiViewGrid} from 'react-icons/hi'
+import {FaTelegramPlane} from 'react-icons/fa'
+import {FiUsers} from 'react-icons/fi'
+import {IoCardOutline} from 'react-icons/io5'
+import {HiUsers} from 'react-icons/hi'
+import {TfiMoreAlt} from 'react-icons/tfi'
+import {CgLogOff} from 'react-icons/cg'
 
 const Sidebar = () => {
   return (
@@ -11,35 +18,36 @@ const Sidebar = () => {
         <div className="sidebar_container">
           <ul>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/Vector.png"} height={15} width={15} className={`me-3`} alt="img"/>
+              {/* <Image src={"/sidebaricons/Vector.png"} height={15} width={15} className={`me-3`} alt="img"/> */}
+              <HiViewGrid style={{marginRight: '7px'}} size={20}/>
               Home
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/product.png"} height={15} width={15} className={`me-3`} alt="img"/>
+              <FaTelegramPlane style={{marginRight: '7px'}} size={20}/>
               Product & Services              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/user.png"} height={15} width={15} className={`me-3`} alt="img"/>
+              <FiUsers style={{marginRight: '7px'}} size={20}/>
               Transactions              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/user.png"} height={15} width={15} className={`me-3`} alt="img"/>
+              <FiUsers style={{marginRight: '7px'}} size={20}/>
               Customers              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/invoice.png"} height={15} width={15} className={`me-3`} alt="img"/>
+              <HiUsers style={{marginRight: '7px'}} size={20}/>
               Invoice              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/invoice.png"} height={15} width={15} className={`me-3`} alt="img"/>
+              <HiUsers style={{marginRight: '7px'}} size={20}/>
               Bills              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/invoice.png"} height={15} width={15} className={`me-3`} alt="img"/>
+              <HiUsers style={{marginRight: '7px'}} size={20}/>
               Payment Links               
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/card.png"} height={15} width={15} className={`me-3`} alt="img"/>
+              <IoCardOutline style={{marginRight: '7px'}} size={20}/>
               Cards              
             </li>
             <li className={`${styles.list} m-auto`}>
@@ -47,11 +55,11 @@ const Sidebar = () => {
               My Account              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/more.png"} height={15} width={15} className={`me-3`} alt="img"/>
+              <TfiMoreAlt style={{marginRight: '7px'}} size={20}/>
               More              
             </li>
             <li className={`${styles.list} m-auto`}>
-              <Image src={"/sidebaricons/logout.png"} height={15} width={15} className={`me-3`} alt="img"/>
+              <CgLogOff style={{marginRight: '7px', color: '#F56A6F'}} size={20}/>
               Logout              
             </li>
             

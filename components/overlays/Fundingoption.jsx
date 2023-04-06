@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import style from '../../styles/overlays/Fundingoptions.module.css'
 import Image from 'next/image'
 import Interactransferoption from './Interactransferoption';
+import {MdOutlineArrowForwardIos} from 'react-icons/md'
 
 const Fundingoption = () => {
 
@@ -33,7 +34,7 @@ const Fundingoption = () => {
             <span className={`${style.heading}`}>Interac Transfer</span>
           </div>
           <div>
-            <Image src={"/fundingoptions/>icon.png"} width={10} height={10} alt='img'/>
+            <MdOutlineArrowForwardIos size={15} style={{color: '#007BFF'}}/>
           </div>
         </div>
         <p className={`${style.ptext}`}>Pay using interac email transfers. Transaction fulfilled in less than 24 hours. Funds should arrrive by Tue, November 23, 2021</p>
@@ -54,7 +55,7 @@ const Fundingoption = () => {
             <span className={`${style.heading}`}>Debit / Card Card</span>
           </div>
           <div>
-            <Image src={"/fundingoptions/>icon.png"} width={10} height={10} alt='img'/>
+            <MdOutlineArrowForwardIos size={15} style={{color: '#007BFF'}}/>
           </div>
         </div>
         <p className={`${style.ptext}`}>Pay using Debit or Credit Card. Transaction fulfilled in minutes!Your Card details are not saved and transaction is safe. </p>
@@ -70,7 +71,7 @@ const Fundingoption = () => {
             <span className={`${style.heading}`}>Transfer between my accounts</span>
           </div>
           <div>
-            <Image src={"/fundingoptions/>icon.png"} width={10} height={10} alt='img'/>
+            <MdOutlineArrowForwardIos size={15} style={{color: '#007BFF'}}/>
           </div>
         </div>
         <p className={`${style.ptext}`}>Send from your Account on Expedier. Transfer fulfilled instantly Funds should arrive by Fri. Nov. 8, 2022</p>
