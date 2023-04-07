@@ -10,11 +10,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* line-height: 5rem; */
   flex-direction: column;
 }
 
-.icon_wrapper{
+.icon_wrapper, .icon_wrapper:focus, .icon_wrapper:hover{
+  color: black;
   margin: 0 1rem;
   text-align: center;
   display: flex;
@@ -25,7 +25,18 @@
 
 .icon_box{
   border: 2px solid black;
-  border-radius: 100%;
-  padding: .5rem;
-  text-align: center;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ptag{
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 12px;
+  font-family: 'DM Sans';
+  margin-top:1rem;
 }

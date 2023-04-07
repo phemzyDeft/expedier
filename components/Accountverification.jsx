@@ -3,13 +3,18 @@ import Link from 'next/link'
 import React from 'react'
 import style from '../styles/account.module.css'
 import Table from './Table'
+import {MdOutlineKeyboardBackspace} from 'react-icons/md'
+import {BiPlus} from 'react-icons/bi'
+import {IoSwapVertical} from 'react-icons/io5'
+import {MdOutlineArrowOutward} from 'react-icons/md'
+import {BsPhoneFlip} from 'react-icons/bs'
 
 const Accountverification = () => {
   return (
     <div className={`${style.account}`}>
       <div className="container-fluid">
         <div className="back d-flex .align-items-center m-auto pt-3">
-          <Link href={"/"} className="me-3"><span></span>Back</Link>
+          <Link href={"/"} className="me-3" style={{fontSize: '14px'}}><MdOutlineKeyboardBackspace size={15}/>Back</Link>
           <h4 style={{fontSize: "1rem"}}>CAD Account</h4>
         </div>
 
@@ -19,30 +24,30 @@ const Accountverification = () => {
           </div>
           <div className='icon_container d-flex justify-content-center py-5'>
 
-            <div className={`${style.icon_wrapper}`}>
+            <Link href={"/"} className={`${style.icon_wrapper}`}>
               <div className={`${style.icon_box}`}>
-                <Image src={"/sidebaricons/bill 1.png"} width={18} height={18} alt='img'/>
+                <BiPlus />
               </div>
-              <p>Pay a Bill</p>
-            </div>
-            <div className={`${style.icon_wrapper}`}>
+              <p className={`${style.ptag}`}>Fund<br />Account</p>
+            </Link>
+            <Link href={"/"} className={`${style.icon_wrapper}`}>
               <div className={`${style.icon_box}`}>
-                <Image src={"/sidebaricons/bill 1.png"} width={18} height={18} alt='img'/>
+                <IoSwapVertical />
               </div>
-              <p>Pay a Bill</p>
-            </div>
-            <div className={`${style.icon_wrapper}`}>
+              <p className={`${style.ptag}`}>Swap<br />Funds</p>
+            </Link>
+            <Link href={"/"} className={`${style.icon_wrapper}`}>
               <div className={`${style.icon_box}`}>
-                <Image src={"/sidebaricons/bill 1.png"} width={18} height={18} alt='img'/>
+                <MdOutlineArrowOutward />
               </div>
-              <p>Pay a Bill</p>
-            </div>
-            <div className={`${style.icon_wrapper}`}>
+              <p className={`${style.ptag}`}>Send<br />Locally</p>
+            </Link>
+            <Link href={"/"} className={`${style.icon_wrapper}`}>
               <div className={`${style.icon_box}`}>
-                <Image src={"/sidebaricons/bill 1.png"} width={18} height={18} alt='img'/>
+                <BsPhoneFlip />
               </div>
-              <p>Pay a Bill</p>
-            </div>
+              <p className={`${style.ptag}`}>Account<br />Details</p>
+            </Link>
           </div>
 
 

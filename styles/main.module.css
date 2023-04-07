@@ -51,7 +51,7 @@
   justify-content: center;
 }
 
-.card_container{
+.card_container, .card_container:hover, .card_container:focus{
   background: #FFFFFF;                          
   color: black;
   box-shadow: 0px 2px 31px rgba(39, 52, 125, 0.05);
@@ -59,13 +59,7 @@
   margin: 0 .6rem;
   padding: 1rem 2rem .3rem;
   cursor: pointer;
-  /* margin: 0 0 1rem; */
 }
-
-/* .card_container:hover{
-  color: #007BFF;
-} */
-
 
 .currency{
   display: flex;

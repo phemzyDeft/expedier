@@ -56,11 +56,11 @@ const Sidebar = () => {
             </li>
             <li className={`${styles.list} m-auto`}>
               <TfiMoreAlt style={{marginRight: '7px'}} size={20}/>
-              More              
+              More
             </li>
             <li className={`${styles.list} m-auto`}>
               <CgLogOff style={{marginRight: '7px', color: '#F56A6F'}} size={20}/>
-              Logout              
+              Logout
             </li>
             
           </ul>
