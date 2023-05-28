@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import style from '../../styles/overlays/Interactransferoptions.module.css'
 import Verifyemail from './Verifyemail';
-import {IoCopyOutline} from 'react-icons/io5'
+import {IoCopyOutline, IoCheckmarkDoneOutline} from 'react-icons/io5'
 
 const Interactransferoption = () => {
 
