@@ -59,7 +59,7 @@ const Login = () => {
         </div>
       </form>
       <div className='my-4 text-center'>
-        <span className={`${style.withgoogle}`}><Image src={"/authimages/google.png"} width={26} height={26  }/> Sign in with Google</span>
+        <span className={`${style.withgoogle}`}><Image src={"/authimages/google.png"} width={26} height={26} alt='img'/> Sign in with Google</span>
         <span className={`${style.withgoogle} mx-4`} style={{background: '#F7F7F7'}}>
           <Image src={"/authimages/Facebook.png"} width={26} height={26} alt='img'/>
         </span>
