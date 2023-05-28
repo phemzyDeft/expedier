@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import style from "../styles/Auth.module.css";
+import style from "../../styles/Auth.module.css";
 import { ImCancelCircle } from "react-icons/im";
 import Register from "@/components/forms/Register";
 
@@ -22,6 +22,7 @@ const register = () => {
             width={200}
             height={66}
             className="px-0 mx-0"
+            alt="img"
           />
         </div>
         <div className={`${style.auth_text}`}>
@@ -39,7 +40,7 @@ const register = () => {
       </div>
       <div className="w-50 d-flex ms-5 ps-5 mt-5">
         <div className={`${style.loginas} me-4 text-center pt-3 px-3`}>
-          <Image src={"/authimages/loginas1.png"} width={70} height={70} />
+          <Image src={"/authimages/loginas1.png"} width={70} height={70} alt="img"/>
           <div style={{ lineHeight: "1px", padding: "2px 0 0" }}>
             <h6>Segun Peters</h6>
             <p style={{ fontSize: "10px" }}>Active 5 mins ago</p>
@@ -56,7 +57,7 @@ const register = () => {
           </span>
         </div>
         <div className={`${style.loginas} .me-5 text-center pt-3 px-3`}>
-          <Image src={"/authimages/loginas2.png"} width={70} height={70} />
+          <Image src={"/authimages/loginas2.png"} width={70} height={70} alt="img"/>
           <div style={{ lineHeight: "1px", padding: "2px 0 0" }}>
             <h6>James Isreal</h6>
             <p style={{ fontSize: "10px" }}>Active 4 days ago</p>

@@ -2,7 +2,6 @@ import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
 import styles from '../styles/sidebar.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {HiViewGrid} from 'react-icons/hi'
 import {FaTelegramPlane} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
@@ -16,7 +15,7 @@ const Sidebar = () => {
     <div className='sidebar_menu mx-0 px-0 py-4'>
       <div className="container mx-0 px-0">
         <div className="sidebar_container">
-          <ul>
+          <ul className=''>
             <li className={`${styles.list} m-auto`}>
               {/* <Image src={"/sidebaricons/Vector.png"} height={15} width={15} className={`me-3`} alt="img"/> */}
               <HiViewGrid style={{marginRight: '7px'}} size={20}/>

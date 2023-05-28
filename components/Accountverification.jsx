@@ -10,6 +10,7 @@ import {MdOutlineArrowOutward} from 'react-icons/md'
 import {BsPhoneFlip} from 'react-icons/bs'
 
 const Accountverification = () => {
+
   return (
     <div className={`${style.account}`}>
       <div className="container-fluid">
@@ -22,7 +23,7 @@ const Accountverification = () => {
             <Image src={"/sidebaricons/country1.png"} height={50} width={50} alt='img'/>
             <p className={`${style.balance}`}>Balance: $0.00</p>
           </div>
-          <div className='icon_container d-flex justify-content-center py-5'>
+          <div className='icon_container d-flex justify-content-center py-4'>
 
             <Link href={"/"} className={`${style.icon_wrapper}`}>
               <div className={`${style.icon_box}`}>

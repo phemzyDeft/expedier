@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Login from "@/components/forms/Login";
-import style from "../styles/Auth.module.css";
+import style from "../../styles/Auth.module.css";
 import { ImCancelCircle } from "react-icons/im";
 
 const login = () => {
@@ -22,6 +22,7 @@ const login = () => {
             width={200}
             height={66}
             className="px-0 mx-0"
+            alt="img"
           />
         </div>
         <div className={`${style.auth_text}`}>
@@ -56,7 +57,7 @@ const login = () => {
           </span>
         </div>
         <div className={`${style.loginas}`}>
-          <Image src={"/authimages/loginas2.png"} width={70} height={70} />
+          <Image src={"/authimages/loginas2.png"} width={70} height={70} alt="img"/>
           <div style={{ lineHeight: "1px", padding: "2px 0 0" }}>
             <h6>James Isreal</h6>
             <p style={{ fontSize: "10px" }}>Active 4 days ago</p>

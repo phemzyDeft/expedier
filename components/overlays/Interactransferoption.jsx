@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import style from '../../styles/overlays/Interactransferoptions.module.css'
 import Verifyemail from './Verifyemail';
+import {IoCopyOutline} from 'react-icons/io5'
 
 const Interactransferoption = () => {
 
@@ -21,6 +22,8 @@ const Interactransferoption = () => {
     }
   };
 
+  const username = `transfers@expedier.co`
+
   return (
     <div>
       <div className='text-center py-1'>
@@ -39,15 +42,17 @@ const Interactransferoption = () => {
       <p style={{color: 'black', fontSize: '.8rem', fontWeight: '600', marginTop: '3rem', fontFamily: 'DM Sans'}}>Send Funds via Interac to</p>
       <form action="">
         <div className={`${style.intinv}`}>
-          <span>transfers@expedier.co</span>
-          <Image src={"/fundingoptions/copy.png"} width={18} height={18} alt='img' style={{cursor: 'pointer'}}/>
+          <span>{username}</span>
+          {username ? <IoCopyOutline style={{cursor: 'pointer'}} onClick={()=>{
+            navigator.clipboard.writeText(username);
+          }}/> : <IoCheckmarkDoneOutline style={{cursor: 'pointer'}}/>}
         </div>
 
         <input type="text" placeholder='Add Coupon (optional)' className={`${style.intinv} w-100`}/>
         <input type="text" placeholder='Interac reference (optional)' className={`${style.intinv} w-100`} />
       </form>
       <div className='d-flex'>
-        <Image src={"/fundingoptions/caution.png"} width={20} height={20}/>
+        <Image src={"/fundingoptions/caution.png"} width={20} height={20} alt='img'/>
         <span style={{color: 'rgba(0, 0, 0, 0.42)', fontSize: '.7rem'}}>Your payment is completed within 15-20 minutes after we confirm your funds. For support please email: Support@Expedier.co</span>
       </div>
       <div className='d-grid'>

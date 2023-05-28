@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import style from "../styles/Auth.module.css";
+import style from '../../styles/Auth.module.css'
 import { ImCancelCircle } from "react-icons/im";
 import Forgetpassword from "@/components/forms/Forgetpassword";
 // import Register from "@/components/forms/Register";
@@ -23,6 +23,7 @@ const forgotpassword = () => {
             width={200}
             height={66}
             className="px-0 mx-0"
+            alt="img"
           />
         </div>
         <div className={`${style.auth_text}`}>

@@ -26,18 +26,21 @@ const Main = () => {
   };
 
   return (
-    <div className='main py-4 px-3' style={{background: "#EDF3FF", marginLeft: '225px'}}>
-      <div className="container">
+    <div className='main py-4 .px-3' style={{background: "#EDF3FF"}}>
+      <div className="container px-3">
         <div className="row">
-          <div className="col-lg-8 col-md-12 col-12">
+          <div className="col-lg-8 col-12">
             <div className={`main_container`}>
+
+            {/* dashboard text and fundwallet button */}
+
               <div className="head d-flex mb-2 align-items-center justify-content-between">
-                <div className={`${style.title}`}>
-                  <h3 className={`${style.dashboard_text}`}>Dashboard</h3>
+                <div className={``}>
+                  <h3 className={`fs-2 ${style.dashboard_text}`}>Dashboard</h3>
                   <p className={`${style.sub_title}`}>Realtime Insight on various activities</p>
                 </div>
                 <div className={`${style.fundwallet}`}>
-                  <button className='btn .btn-primary btn-sm' style={{background: "#007BFF", borderRadius: '3px', color: 'white', padding: "10px"}} onClick={handleSidebarOpen}>
+                  <button className='btn px-0 p-md-2' style={{background: "#007BFF", borderRadius: '3px', color: 'white'}} onClick={handleSidebarOpen}>
                     <Image src={"/sidebaricons/fw_btn.png"} width={20} height={20} alt='img'/>
                     <span className='fw-bold ps-2'>FUND WALLET</span>
                   </button>
@@ -52,6 +55,9 @@ const Main = () => {
 
                 </div>
               </div>
+
+            {/* user card details */}
+
               <div className={`${style.card} card_box px-4 py-3 text-white`}>
                 <div className="acc_details">
                   <p className={`${style.card_box_title}`}>Total Business Account Balance</p>
@@ -72,13 +78,17 @@ const Main = () => {
                   </div>
                 </div>
               </div>
+
+              {/* card and countrycard */}
               <Cards />
+
               <div className={`d-flex align-items-end justify-content-end my-3`}>
                 <select name="" id="" className={`${style.filter_btn} px-5 py-2`}>
                 {/* <Image src={"/sidebaricons/calendar.png"} width={30} height={30}/> */}
                   <option value="Monthly" >Monthly</option>
                 </select>
               </div>
+
               <Table />
             </div>
           </div>

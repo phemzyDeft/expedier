@@ -5,10 +5,10 @@ import Image from 'next/image'
 
 const Cards = () => {
   return (
-    <div>
+    <div className='container'>
       <div className='cards' style={{margin: '2rem 0'}}>
-        <div className="row">
-          <Link href={"/account"} className={`${style.card_container} col`}>
+        <div className="row gap-3">
+          <Link href={"/account"} className={`${style.card_container} col-md col-12`}>
             <div className={`${style.currency}`}>
               <Image src={"/sidebaricons/country2.png"} width={30} height={20} alt='img'/>
               <p className='px-2'>Balance</p>
@@ -18,7 +18,7 @@ const Cards = () => {
             </div>
             <p className={`${style.cardnumber}`}>Canadian Dollar</p>
           </Link>
-          <Link href={"/account"} className={`${style.card_container} col`}>
+          <Link href={"/account"} className={`${style.card_container} col-md col-12`}>
             <div className={`${style.currency}`}>
               <Image src={"/sidebaricons/country1.png"} width={30} height={20} alt='img'/>
               <p className='px-2'>Balance</p>
@@ -28,7 +28,7 @@ const Cards = () => {
             </div>
             <p className={`${style.cardnumber}`}>Nigerian Naira</p>
           </Link>
-          <Link href={"/account"} className={`${style.card_container} col`}>
+          <Link href={"/account"} className={`${style.card_container} col-md col-12`}>
             <div className={`${style.currency}`}>
               <Image src={"/sidebaricons/country1.png"} width={30} height={20} alt='img'/>
               <p className='px-2'>Balance</p>

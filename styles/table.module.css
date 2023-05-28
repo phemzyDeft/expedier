@@ -1,15 +1,12 @@
 .th{
   font-family: 'Poppins';
   font-weight: 500;
-  line-height: 24px;
-  
   color: #007BFF;
 }
 
 .tr{
   font-family: 'DM Sans';
   font-weight: 400;
-  line-height: 23px;
   color: #404550;
 }
 
@@ -22,4 +19,10 @@
 }
 .tablerow:nth-child(2){
   border-bottom: 1px solid #DDE0E2;  
+}
+
+@media only screen and (max-width: 768px) {
+  .tr{
+    font-size: .8rem;
+  }
 }

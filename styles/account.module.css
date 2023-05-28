@@ -1,16 +1,16 @@
 .account{
   background: #EDF3FF;
-  width: 100%;
+  /* width: 100%; */
   min-height: 100vh;
-  margin-left: 235px;
+  /* margin-left: 235px; */
 }
 
 .acc_details{
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   flex-direction: column;
+  margin-top: 5rem;
 }
 
 .icon_wrapper, .icon_wrapper:focus, .icon_wrapper:hover{

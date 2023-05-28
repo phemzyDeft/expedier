@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import style from "../styles/Auth.module.css";
+import style from "../../styles/Auth.module.css";
 import {SlCamera} from 'react-icons/sl'
 
 const selectaccount = () => {
@@ -21,6 +21,7 @@ const selectaccount = () => {
             width={200}
             height={66}
             className="px-0 mx-0"
+            alt="img"
           />
         </div>
         <div className={`${style.auth_text}`}>
@@ -35,19 +36,19 @@ const selectaccount = () => {
       </div>
       <div className="w-50 d-flex ms-5 ps-5 mt-5 align-items-center">
         <div className={`${style.loginas}`} style={{background: 'transparent', marginRight: '0px'}}>
-          <Image src={"/authimages/user1.png"} width={70} height={70} />
+          <Image src={"/authimages/user1.png"} width={70} height={70} alt="img"/>
         </div>
         <div className={`${style.loginas}`} style={{background: 'transparent', marginRight: '0px'}}>
-          <Image src={"/authimages/user2.png"} width={70} height={70} />
+          <Image src={"/authimages/user2.png"} width={70} height={70} alt="img"/>
         </div>
         <div className={`${style.loginas}`} style={{background: 'transparent', marginRight: '0px'}}>
-          <Image src={"/authimages/user3.png"} width={70} height={70} />
+          <Image src={"/authimages/user3.png"} width={70} height={70} alt="img"/>
         </div>
         <div className={`${style.loginas}`} style={{background: 'transparent', marginRight: '0px'}}>
-          <Image src={"/authimages/user4.png"} width={70} height={70} />
+          <Image src={"/authimages/user4.png"} width={70} height={70} alt="img"/>
         </div>
         <div className={`${style.loginas}`} style={{background: 'transparent', marginRight: '0px'}}>
-          <Image src={"/authimages/user5.png"} width={70} height={70} />
+          <Image src={"/authimages/user5.png"} width={70} height={70} alt="img"/>
         </div>
         <div className={`${style.camera}`}>
           <SlCamera />

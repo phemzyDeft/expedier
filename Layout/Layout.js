@@ -3,6 +3,7 @@ import Sidebar from "@/components/Sidebar";
 import React from "react";
 import style from "../styles/sidebar.module.css";
 import { useRouter } from "next/router";
+import Accountverification from "@/components/Accountverification";
 
 const Layout = ({ children }) => {
   const router = useRouter();
@@ -10,8 +11,8 @@ const Layout = ({ children }) => {
     router.pathname === "/login" ||
     router.pathname === "/register" ||
     router.pathname === "/forgotpassword" ||
-    router.pathname === '/test' ||
-    router.pathname === '/selectaccount';
+    router.pathname === "/test" ||
+    router.pathname === "/selectaccount";
 
   return (
     <>
@@ -22,14 +23,14 @@ const Layout = ({ children }) => {
       )}
       <div className="container-fluid px-0" style={{ overflowX: "hidden" }}>
         <div className="row">
-          <div style={{ marginTop: "100px" }}>
-            {!authScreen && (
-              <div className={`${style.container} col-lg-2 position-fixed`}>
-                <Sidebar />
-              </div>
-            )}
-            <div className={`col-lg-12 .offset-lg-2`}>{children}</div>
-          </div>
+          {!authScreen && (
+            <div
+              className={`${style.container} d-none d-lg-inline col-lg-2 position-fixed`}
+            >
+              <Sidebar />
+            </div>
+          )}
+          <div className={`col-lg-10 col-12 offset-0 offset-lg-2`}>{children}</div>
         </div>
       </div>
     </>
